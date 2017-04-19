@@ -8,7 +8,7 @@ install:
   - travis_retry composer global require "fxp/composer-asset-plugin:~1.1.1"
 
 before_script:
-  - travis_retry composer update
+  - travis_retry composer update --no-interaction --prefer-dist
 
 script:
   - cat composer.lock
