@@ -2,8 +2,6 @@ language: php
 
 php:
   - 7.0
- # - 5.6
- # - 5.5
 
 install:
   - travis_retry composer self-update
@@ -12,6 +10,5 @@ install:
 before_script:
   - travis_retry composer update
 
-after_script:
-  - cat composer.json
+script:
   - cat composer.lock
