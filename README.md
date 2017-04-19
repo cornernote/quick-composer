@@ -14,6 +14,11 @@ Once the update has been run, composer generates a file named `composer.lock`.  
 This repository leverages travis-ci to create a `composer.lock` using a remote machine on a stable network.  This file can then be copied locally to bypass local `composer update` issues.
 
 
+## Setup
+
+To add the repository to travis-ci see their [getting started guide](https://travis-ci.org/getting_started).
+
+
 ## Instructions
 
 - Update [`composer.json`](https://github.com/cornernote/quick-composer/edit/master/composer.json).
