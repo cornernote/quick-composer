@@ -1,30 +1,95 @@
 {
-    "name": "mr-php/timesheet",
-    "minimum-stability": "stable",
-    "require": {
-        "fxp/composer-asset-plugin": "*",
-        "vlucas/phpdotenv": "2.*",
-        "yiisoft/yii2": "^2.0.8",
-        "yiisoft/yii2-bootstrap": "2.*",
-        "yiisoft/yii2-debug": "2.*",
-        "codemix/yii2-streamlog": "^1.0.0",
-        "ajt/guzzle-toggl": "^0.12.0",
-        "dlin/saasu": "dev-master",
-        "yii2mod/yii2-settings": "*",
-        "dmstr/yii2-migrate-command": "*",
-        "bower-asset/sweetalert": "1.1.*",
-        "cebe/yii2-gravatar": "*"
-    },
-    "config": {
-        "fxp-asset": {
-            "installer-paths":{
-                "npm-asset-library": "vendor/npm",
-                "bower-asset-library": "vendor/bower"
-            },
-            "vcs-driver-options": {
-                "github-no-api": true
-            },
-            "pattern-skip-version": "(-build|-patch)"
-        }
+  "name": "atlanticdigital/adonis",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Brett O'Donnell",
+      "email": "brett@mrphp.com.au",
+      "homepage": "https://mrphp.com.au"
     }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "php": ">=5.4.0",
+    "dektrium/yii2-user": "0.9.*",
+    "dektrium/yii2-rbac": "dev-master",
+    "dmstr/yii2-app-command": "@stable",
+    "dmstr/yii2-log": "@stable",
+    "dmstr/yii2-migrate-command": "@stable",
+    "mikehaertl/php-shellcommand": "1.*",
+    "vlucas/phpdotenv": "1.1.*",
+    "yiisoft/yii2": "2.0.*",
+    "yiisoft/yii2-bootstrap": "2.*",
+    "yiisoft/yii2-composer": "*",
+    "yiisoft/yii2-swiftmailer": "2.*",
+    "bower-asset/jquery": "@stable",
+    "kartik-v/yii2-widget-select2": "*",
+    "vova07/yii2-console-runner-extension": "*",
+    "raoul2000/yii2-workflow": "*",
+    "zhuravljov/yii2-datetime-widgets": "*",
+    "cornernote/yii2-ace": "dev-master",
+    "cornernote/yii2-gii": "dev-master",
+    "cornernote/yii2-softdelete": "dev-master",
+    "cornernote/yii2-linkall": "dev-master",
+    "cornernote/yii2-shortcuts": "dev-master",
+    "cornernote/yii2-menu": "dev-master",
+    "2amigos/yii2-chartjs-widget": "~2.0",
+    "2amigos/yii2-highcharts-widget": "dev-master",
+    "slatiusa/yii2-nestable": "dev-master",
+    "kartik-v/yii2-tree-manager": "*",
+    "bedezign/yii2-audit": "dev-master",
+    "mikehaertl/phpwkhtmltopdf": "2.1.*",
+    "cornernote/yii2-adldap-module": "dev-master",
+    "adldap/adldap": "dev-master",
+    "2amigos/yii2-ckeditor-widget": "~1.0",
+    "sjaakp/yii2-sortable-behavior": "*",
+    "kartik-v/yii2-widget-activeform": "~1.4",
+    "kartik-v/yii2-grid": "*",
+    "kartik-v/yii2-mpdf": "dev-master",
+    "kartik-v/yii2-editable": "@dev",
+    "kartik-v/yii2-datecontrol": "@dev",
+    "kartik-v/yii2-widgets": "@dev",
+    "pheme/yii2-settings": "*",
+    "eluceo/ical": "^0.11.1",
+    "kartik-v/yii2-widget-fileinput": "@dev",
+    "php-mime-mail-parser/php-mime-mail-parser": "*"
+  },
+  "require-dev": {
+    "yiisoft/yii2-apidoc": "2.*",
+    "yiisoft/yii2-codeception": "2.*",
+    "yiisoft/yii2-coding-standards": "2.*",
+    "yiisoft/yii2-debug": "2.*",
+    "yiisoft/yii2-faker": "2.*",
+    "yiisoft/yii2-gii": "2.*",
+    "cebe/markdown-latex": "dev-master"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "git@github.com:cornernote/yii2-adldap-module.git"
+    }
+  ],
+  "scripts": {
+    "post-create-project-cmd": [
+      "yii\\composer\\Installer::postCreateProject"
+    ]
+  },
+  "extra": {
+    "yii\\composer\\Installer::postCreateProject": {
+      "setPermission": [
+        {
+          "runtime": "0777",
+          "web/assets": "0777",
+          "yii": "0755"
+        }
+      ]
+    },
+    "asset-installer-paths": {
+      "npm-asset-library": "vendor/npm",
+      "bower-asset-library": "vendor/bower"
+    }
+  },
+  "config": {
+    "process-timeout": 1800
+  }
 }
