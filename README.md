@@ -22,6 +22,6 @@ To add the repository to travis-ci see their [getting started guide](https://tra
 ## Instructions
 
 - Update [`composer.json`](https://github.com/cornernote/quick-composer/edit/master/composer.json).
-- Visit [cornernote/quick-composer](https://travis-ci.org/cornernote/quick-composer).
+- Visit [travis-ci](https://travis-ci.org/cornernote/quick-composer).
 - Search the raw log for `cat composer.lock`, copy the following content to your local `composer.lock`.
 - Run `composer install` locally.
