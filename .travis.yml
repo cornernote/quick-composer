@@ -3,10 +3,12 @@ language: php
 php:
   - 7.1
 
+before_install: 
+  - echo "extension = ldap.so" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
+
 install:
   - travis_retry composer self-update
   - travis_retry composer global require "fxp/composer-asset-plugin:~1.1.1"
-  - travis_retry pecl install ldap
 
 before_script:
   - travis_retry composer update --no-interaction --prefer-dist
