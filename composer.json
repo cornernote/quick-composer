@@ -52,7 +52,7 @@
     "pheme/yii2-settings": "*",
     "eluceo/ical": "^0.11.1",
     "kartik-v/yii2-widget-fileinput": "@dev",
-    "php-mime-mail-parser/php-mime-mail-parser": "*"
+    "php-mime-mail-parser/php-mime-mail-parser": "~2.9"
   },
   "require-dev": {
     "yiisoft/yii2-apidoc": "2.*",
