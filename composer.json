@@ -1,25 +1,25 @@
 {
-  "name": "cornernote/jobflw4",
+  "name": "afibranding/console",
   "minimum-stability": "beta",
   "require": {
     "vlucas/phpdotenv": "2.*",
     "yiisoft/yii2": "^2.0.8",
-    "yiisoft/yii2-bootstrap": "2.*",
+    "yiisoft/yii2-bootstrap": "2.0.6",
     "yiisoft/yii2-redis": "^2.0.5",
     "yiisoft/yii2-twig": "^2.1.0",
     "dmstr/yii2-cms-metapackage": "^5.0",
     "2amigos/yii2-chartjs-widget": "~2.0",
     "2amigos/yii2-highcharts-widget": "dev-master",
     "bedezign/yii2-audit": "dev-master",
-    "mikehaertl/phpwkhtmltopdf": "2.1.*",
+    "mikehaertl/phpwkhtmltopdf": "2.3.*",
     "2amigos/yii2-ckeditor-widget": "~1.0",
     "sjaakp/yii2-sortable-behavior": "*",
     "kartik-v/yii2-widget-activeform": "~1.4",
     "kartik-v/yii2-grid": "*",
-    "kartik-v/yii2-mpdf": "dev-master",
     "kartik-v/yii2-editable": "@dev",
     "kartik-v/yii2-datecontrol": "@dev",
     "kartik-v/yii2-widgets": "@dev",
+    "kartik-v/yii2-mpdf": "*",
     "cornernote/yii2-linkall": "dev-master",
     "cornernote/yii2-gii": "dev-master",
     "cornernote/yii2-cache-behavior": "dev-master",
@@ -47,7 +47,12 @@
     "fedemotta/yii2-aws-sdk": "*",
     "frostealth/yii2-aws-s3": "~1.0@stable",
     "understeam/yii2-slack": "~0.3",
-    "yohang88/letter-avatar": "^1.0"
+    "yohang88/letter-avatar": "^1.0",
+    "php-mime-mail-parser/php-mime-mail-parser": "~2.9",
+    "authy/php": "2.*",
+    "calcinai/xero-php": "1.5.*",
+    "phpoffice/phpspreadsheet": "*",
+    "rocketfirm/yii2-onesignal": "*"
   },
   "require-dev": {
     "dmstr/yii2-cms-dev-metapackage": "^1.1.0"
